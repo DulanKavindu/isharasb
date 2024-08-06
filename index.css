@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,500&display=swap');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Whole Doc */
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    border: dotted;
+    border-color:goldenrod ;
+}
+
+/* Slider */
+.slider > div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+}
+
+.slider > div::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: #2e8dcc;
+    opacity: 0.3;
+}
+
+.slider img{
+    width: 120%;
+    height: 120%;
+    animation: zoom-o 5s linear infinite;
+}
+
+.text{
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    transform: translate(0%, -50%);
+    color:rgb(255, 0, 238);
+    opacity: 0.9;
+    animation: text-left 5s linear infinite;
+   
+    text-align: center;
+}
+
+
+
+
+.text p{
+    position: absolute;
+
+    font-size: 0.9rem;
+    font-weight: 300;
+    background: rgb(45, 52, 54, 0.9);
+    padding: 20px;
+    text-align: justify;   
+    line-height: 1.4rem;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: wheat;
+    
+}
+
+/* Main Animations and Keyframes */
+.slider-1{
+    animation: slide1 30s linear infinite;
+}
+
+.slider-2{
+    animation: slide2 30s linear infinite;
+}
+
+.slider-3{
+    animation: slide3 30s linear infinite;
+}
+
+
+/* For Slides */
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    20%{
+        visibility: hidden;
+    }
+    40%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: hidden;
+    }
+    80%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    20%{
+        visibility: hidden;
+    }
+    40%{
+        visibility: visible;
+    }
+    60%{
+        visibility: hidden;
+    }
+    80%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    20%{
+        visibility: hidden;
+    }
+    40%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: visible;
+    }
+    80%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+
+
+/* For Image */
+@keyframes zoom-o{
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* For Text */
+@keyframes text-left{
+    100%{
+        left: 10%;
+        opacity: 1;
+    }
+}
+.dk P{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: goldenrod;
+}
+.dk h3{
+    background-color: silver;
+}
+
+
+.dk{
+    
+    background-color: rgb(222, 206, 32);
+    height: 300spx;
+    width: 300px;
+    animation-name:dulan ;
+    animation-duration: 6s;
+    position: relative;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+
+}
+.dk button{
+    background-color: aquamarine;
+    font-size: larger;
+}
+.dk :hover{
+    background-color: silver;
+    transform: rotateX(180deg) rotateY(180deg)rotateZ(180deg);
+}
+h3{
+    color:navy;
+}
+h2{
+    color: black;
+}
+@keyframes dulan{
+    0%{
+        background-color: burlywood;
+        left:0px;
+        top:400px;
+        align-self: start;
+        border-radius: 80%;
+        
+    }
+    25%{
+        background-color: goldenrod;
+        left:0pxx;
+        top:400px;
+        align-self: left;
+        border-radius: 60%;
+        
+    }
+    50%{
+        background-color: rgb(15, 94, 169);
+        left:100px;
+        top:400px;
+        border-radius: 25%;
+    
+    }
+    75%{
+        background-color:yellowgreen;
+        left:150px;
+        top:400px;
+        border-radius: 10%;
+    
+    }
+    100%{
+        background-color:gold;
+        left:200px;
+        top: 400px;
+        border-radius: 0%;
+        
+    }
+}
+
+    .ishara{
+        background-color:greenyellow;
+        height: 40spx;
+        width: 530px;
+        animation-name:niwa ;
+        animation-duration: 6s;
+        position: relative;
+        animation-iteration-count: infinite;
+        bottom: 40%;
+
+    }
+    @keyframes niwa {
+        0%{
+            background-color: burlywood;
+            left:750px;
+            top:200px;
+            align-self: start;
+            border-radius: 0%;
+            opacity: 0.0;
+        }
+        25%{
+            background-color: rgb(205, 83, 128);
+            left:700px;
+            top:200px;
+            align-self: left;
+            border-radius: 10%;
+            opacity: 0.0;
+        }
+        50%{
+            background-color: rgb(15, 94, 169);
+            left:800px;
+            top:200px;
+            border-radius: 25%;
+            opacity: 0.2;
+        }
+        75%{
+            background-color: yellowgreen;
+            left:850px;
+            top:200px;
+            border-radius: 37%;
+            opacity: 0.8;
+        }
+        100%{
+            background-color: rosybrown;
+            left:955px;
+            top:200px;
+            color: orange;
+            border-radius: 20%;
+            opacity: 1;
+        }
+    }
+.ishara h1{
+    
+    color:rgb(60, 20, 220);
+    bottom: 43%;
+    margin: 30px 10px 10px 10px;
+    padding: 20px 0px 0px 0px;
+}
+
+.indu{
+    width: 400px;
+    height: 400px;
+    align-items: end;
+}
+
+
+.ishara h1::first-letter{
+    
+    color: gold;
+}
+
+
+.pissa img {
+    position: absolute;
+    
+    right: 60px;
+    width: 215px;
+    height: 100px;
+    max-width: 100%;
+    bottom: 58%;
+    
+    height: auto;
+}
+.pissa h2{
+    position: absolute;
+       
+    right: 20px;
+    width: 300px;
+    height: 80px;
+    max-width: 100%;
+    bottom: 41%;
+    background-color: yellowgreen;
+    padding: 10px 5px 10px 0px;
+    
+}
+.pissa h3{
+    position: absolute;
+       
+    right: 20px;
+    width: 300px;
+    height: 80px;
+    max-width: 100%;
+    bottom: 47%;
+  
+    
+}
+
+.dk h2::first-line{
+    color: rgb(15, 15, 15);
+}
+.dk h2::first-letter{
+    font-size: x-large;
+}
+.pissa{
+    float: right;
+    border: 1px solid;
+    box-sizing: border-boxs;
+    background-color: aquamarine;
+    
+    }
+    .aki h3{
+        background-color: rgb(232, 240, 240);
+        padding: 0px 5px 50px 0px;
+    
+    }
+   .aki h2{
+    padding: 0px 5px 50px 0px;
+    margin: 0px 0px 0px 0px;
+   }
+   .slider-1 h2::first-letter{
+    font-size: xx-large;
+    color: chartreuse;
+   }
+   .slider-2 h2::first-letter{
+    font-size: xx-large;
+    color: rgb(0, 213, 255);
+   }
+   .slider-3 h2::first-letter{
+    font-size: xx-large;
+    color: rgb(238, 255, 0);
+   }
+   .slider-1 h2{
+    color: darkmagenta;
+    background-color: skyblue;
+    margin: 0px 0px 0px 0px;
+    opacity: 0.9;
+   }
+   .slider-2 h2{
+    color: darkmagenta;
+    background-color: silver;
+    opacity: 0.6;
+   }
+
+.slider-3 h2{
+ color: darkmagenta;
+ background-color: aliceblue;
+ opacity: 0.8;
+ 
+}
+   
+   
+   
+
+
+/* Responsive */
+@media(max-width: 1400px){
+    .slider > div{
+        height: 85%;
+    }
+
+    .text p{
+        font-size: 0.8rem;
+    }
+
+    .text h1{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 1000px){
+    .slider > div{
+        height: 75%;
+    }
+
+    .text p{
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+    }
+
+    .text h1{
+        font-size: 2.2rem;
+    }
+}
+
+@media(max-width: 800px){
+    .slider > div{
+        height: 65%;
+    }
+
+    .text p{
+        font-size: 0.6rem;
+        line-height: 1rem;
+    }
+
+    .text h1{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 800px){
+    .slider > div{
+        height: 50%;
+    }
+
+    .text h1{
+        font-size: 1.8rem;
+    }
+}
+
